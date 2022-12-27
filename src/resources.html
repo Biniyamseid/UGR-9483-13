@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+  name="description"
+  content="free resources">
     <title>tutor.org</title>
 </head>
 <body>
@@ -26,12 +29,13 @@
     <hr>
     </header>
     <div class="search-bar">
+        <label for="siteSearch" class="sr-only">Search</label>
         <input type="text" placeholder="Search..">
         <i class="fa fa-search" aria-hidden="true"></i>
       </div>
     <hr>
     <section class="horiontal-sliding-image">
-        <img src="image/binitutor.png"  width="30%" alt="cartoon studying online or binitutor">
+        <img src="image/binitutor.png"  width="30%" height="20%" alt="cartoon studying online or binitutor">
         <hr>
     </section>
     <section class="navigator">
@@ -42,7 +46,7 @@
         </nav>
     </section>
     <section class="contents-list">
-        <h3>resources</h3>
+        <h2>resources</h2>
         <div class="audio-list-1">
             <figure>
                 <audio
@@ -72,16 +76,18 @@
             </figure>
         </div>
         <div class="video-content">
-            <video controls width="250">
+            <video controls width="250" title="a womam studying online">
                 <source src="video/video2.mp4"
                         type="video/mp4">
+                        <track label="English captions" kind="captions" src="caption/video1.vtt" srclang="en" default>
+                        <track label="English subtitles" kind="subtitles" src="caption/subtitle/video1.vtt" srclang="en" default>
                 Download the
                 <a href="video/video1.mp4">MP4</a>
                 video.
             </video>
         </div>
         <div class="image-content">
-            <img src="image/image1.jpg" alt="books" width="20%">
+            <img src="image/image1.jpg" alt="books" width="20%" height="20%" alt="book">
         </div>
     </section>
 
