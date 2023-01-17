@@ -1,52 +1,43 @@
-const signup_form = document.getElementById('signup_form');
-const signup_email = document.getElementById('signup_email');
-const signup_password = document.getElementById('signup_password');
-const signin_form = document.getElementById('signin_form');
-const signin_email = document.getElementById('signin_email');
-const signin_password = document.getElementById('signin_password');
-console.log(signin_email.value);
-console.log(signup_email.value);
-if (signin_email.value){
-    form = signin_form;
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-    
-        validateInputs();
-    });
-}
-else if (signup_form.value){
-    form = signup_form;
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-    
-        validateInputs();
-    });
-}
-else{
-    setError(email, 'please provide valid data');
-}
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 
+form.addEventListener('submit', e => {
+    e.preventDefault();
 
-
-
+    validateInputs();
+});
 
 
 const setError = (element, message) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
+    if (inputControl!=null){
+        const errorDisplay = inputControl.querySelector('.error');
+        inputControl.classList.add('error');
+        inputControl.classList.remove('success')
+        if (errorDisplay!=null){
+            errorDisplay.innerText = message;
+        }
 
-    errorDisplay.innerText = message;
-    inputControl.classList.add('error');
-    inputControl.classList.remove('success')
+        
+       
+
+    }
+    else{
+        
+    }
+    
 }
 
 const setSuccess = element => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
-
-    errorDisplay.innerText = '';
-    inputControl.classList.add('success');
-    inputControl.classList.remove('error');
+    if (inputControl!=null){
+        const errorDisplay = inputControl.querySelector('.error');
+        errorDisplay.innerText = '';
+        inputControl.classList.add('success');
+        inputControl.classList.remove('error');
+    }
+    
 };
 
 const isValidEmail = email => {
@@ -55,20 +46,8 @@ const isValidEmail = email => {
 }
 
 const validateInputs = () => {
-    if (signin_email){
-        email =signin_email.value.trim();
-        password =signin_password.value.trim();
-    }
-    else if (signup_email){
-        email =signup_email.value.trim();
-        password =signup_password.value.trim();
-    }
-    else{
-        setError(email, 'Provide a valid email address');
-    }
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
-
     if(emailValue === '') {
         setError(email, 'Email is required');
     } else if (!isValidEmail(emailValue)) {
