@@ -5,79 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <meta
   name="description"
   content="free resources">
     <title>tutor.org</title>
 </head>
 <body>
-    <header class = 'header'>
+    <header class = 'header bg-primary'>
         <div class = "header-1">
-            <a href="index.html"> <img src="image/bini tutor.svg" alt="logo"  height="250px" width="150px"/></a>
+            <a href="index.html"> <img src="image/bini tutor.svg" alt="logo"  height="150px" width="50px"/></a>
             <h1>Education is the passport to the future, for tomorrow belongs to those who prepare for it today.</h1>
             <i class="fa fa-toggle-on"></i>
             <hr>
         </div>
-        <div class="header-2">
-            <nav class="navbar">
-                <a href="index.html">HomePage</a>
-                <a href="resources.html">Resources</a>
-                <a href="my Account.html">MyAccount</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About</a>
+        <div class="header-2 navbar ">
+            <nav class="container flex">
+                <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="my Account.html">MyAccount</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                </ul>
             </nav>
         </div>
         <hr>
     </header>
     <section class="HomePage">
-
-        <div class="image-holder-1">
-            <img src="image/image1.jpg" alt="library image" height="300px" width="450px"> 
-            <img src="image/image2.jpg" alt="library image" height="300px" width="453px">
-            <img src="image/image3.jpg" alt="library image" height="300px" width="450px">
+        <div class = "image-holder-1" >
+            <ul class="scroll-container" data-layoutmethod="flexbox">
+              <li class="scroll-item"><img src="image/image1.jpg" alt="library image" > </li>
+              <li class="scroll-item"><img src="image/image2.jpg" alt="library image" ></li>
+              <li class="scroll-item"><img src="image/image3.jpg" alt="library image" ></li>
+              <li class="scroll-item"><img src="image/image1.jpg" alt="library image" > </li>
+              <li class="scroll-item"><img src="image/image2.jpg" alt="library image" ></li>
+              <li class="scroll-item"><img src="image/image3.jpg" alt="library image" ></li>
+              <li class="scroll-item"><img src="image/image3.jpg" alt="library image" ></li>
+            </ul>  
         </div>
-        <h1>get free references and resources for your class</h1>
-        <div class="New-courses">
-            <h2>New courses</h2>
-            <div class="new-courses-container-1">
-                <ul class="new-courses">
-                    <li>course 1</li>
-                    <li>course 2</li>
-                    <li>course 3</li>
-                    <li>course 4</li>
-                </ul>
-            </div>
-            <div class="new-courses-container-2">
-                <ul class="new-courses">
-                    <li>course 1</li>
-                    <li>course 2</li>
-                    <li>course 3</li>
-                    <li>course 4</li>
-                </ul>
-            </div>
-            <div class="new-courses-container-3">
-                <ul class="new-courses">
-                    <li>course 1</li>
-                    <li>course 2</li>
-                    <li>course 3</li>
-                    <li>course 4</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-</body>
+        
+        
 <hr>
-<footer>
-    <div class="socialmedia-contact">
-        <a href="https://www.facebook.com/biniyam.seid.50/">follow us on facebook</a>
-        <a href="https://t.me/z_innovator">|telegram</a>
-        <a href="https://www.instagram.com/Biniyamseidt/">|instagram|</a>
-        <a href="https://www.tiktok.com/@1_birr">tiktok</a>
+<section class="cloud bg-primary my-2 py-2">
+    <div class=" container grid">
+        <div class="text-center">
+            <h2 class="lg">Excelent References</h2>
+            <p class="lead my-1">a lot of audio and video resources.
+                with fast and reliable services
+            </p>
+        </div>
+        <img src="image/aboutimg.png" alt="student studeing image">
+    </div>
+</section>
+<section class="courses">
+    <h2 class="md text-center my-2">
+        New Courses
+    </h2>
+    <div class="container flex">
+        <div class="card">
+            <h4>Node.js</h4>
+            <img src="image/logo/node.png" alt="">
+        </div>
+        <div class="card">
+            <h4>Python</h4>
+            <img src="image/logo/python.png" alt="">
+          </div>
+          <div class="card">
+            <h4>C#</h4>
+            <img src="image/logo/csharp.png" alt="">
+          </div>
+          <div class="card">
+            <h4>Ruby</h4>
+            <img src="image/logo/ruby.png" alt="">
+          </div>
+          <div class="card">
+            <h4>PHP</h4>
+            <img src="image/logo/php.png" alt="">
+          </div>
+          <div class="card">
+            <h4>Scala</h4>
+            <img src="image/logo/scala.png" alt="">
+          </div>
+          <div class="card">
+            <h4>Clojure</h4>
+            <img src="image/logo/clojure.png" alt="">
+          </div>
+    </div>
+</section>
+<footer class="footer bg-lightdark py-1"> 
+    <div class="container grid grid-1"></div>
+    <div class="socialmedia-contact container py-1 ">
+        <a href="https://www.facebook.com/biniyam.seid.50/" class="fab fa-facebook fa-2x ">facebook</a>
+        <a href="https://t.me/z_innovator" class="fab fa-telegram fa-2x">telegram</a>
+        <a href="https://www.instagram.com/seidbiniyam/" class="fab fa-instagram fa-2x">instagram</a>
+        <a href="https://www.tiktok.com/@1_birr" class="fab fa-tiktok fa-2x">tiktok</a>
+    </div>
+</footer>
 
-    </div>
-    <div class="copyright">
-        <p><a href="mailto:hege@example.com">copyright @Biniyamseid</a></p>
-    </div>
-  </footer>
+<footer class="footer bg-dark py-1 flex">
+<div class="copyright">
+    <p><a href="mailto:hege@example.com">copyright @Biniyamseid</a></p>
+</div>
+</footer>
+</html>
 </html>
