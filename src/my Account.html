@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/index.js"></script>
     <meta
   name="description"
   content="free resources">
@@ -32,16 +33,18 @@
         </div>
         <hr>
     </header>
-    <section class="account-setup "> 
+    <section class="account-setup"> 
         <div class = "myAccount account-setup-container grid">
             <div class="create-account card signup myAccount-form">
             <h2>Create account</h2>
-            <form action="" class="" >
+            <form action="" class="signup_form">
                 <div class="form-control"><h3>Email</h3>
-                    <input type="email" placeholder="enter your email" required>
+                    <input id="signup_email" type="email" placeholder="enter your email" required>
+                    <div></div>
                 </div>
                 <div><h3>Password</h3>
-                    <input type="password" placeholder="enter your email" required>
+                    <input id="signup_password"  type="password" placeholder="enter your email" required>
+                    <div class="error"></div>
                 </div>
                 <input type="submit" value="create-account" class="btn btn-primary my-2">
             </form>
@@ -50,14 +53,17 @@
         </div>
         <div class="signin card myAccount-form" >
             <h3>Sign in</h3>
-            <form action="" class="">
-                <div class="form-control"><h3>Email</h3>
-                    <input type="email" placeholder="enter your email" required>
+            <form action="" class="" id="signin_form">
+                <div class="form-control input_control"><h3>Email</h3>
+                    <input id="signin_email" type="email" placeholder="enter your email" required >
+                    <div class="error"></div>
                 </div>
                 <div><h3>Password</h3>
-                    <input type="password" placeholder="enter your email" required>
+                    <input id="signin_password"  type="password" placeholder="enter your password" required >
+                    <div class="error"></div>
                 </div>
                 <input  type="submit" value="signin" class="btn btn-primary my-1">
+                <div></div>
             </form>
         </div>
        
