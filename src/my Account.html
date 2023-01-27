@@ -5,42 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/index.js"></script>
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2/css/bootstrap.min.css">
     <meta
   name="description"
   content="free resources">
     <title>tutor.org</title>
 </head>
 <body>
-    <header class = 'header bg-primary'>
-        <div class = "header-1">
-            <a href="index.html"> <img src="image/bini tutor.svg" alt="logo"  height="150px" width="50px"/></a>
-            <h1>Education is the passport to the future, for tomorrow belongs to those who prepare for it today.</h1>
-            <i class="fa fa-toggle-on"></i>
-            <hr>
-        </div>
-        <div class="header-2 navbar ">
-            <nav class="container flex">
-                <ul>
-                <li><a href="index.html">HomePage</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="my Account.html">MyAccount</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class = 'navbar bg-primary'>
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a class="navbar-brand" href="index.html"> <img src="image/bini tutor.svg" alt="logo"  height="150px" width="50px"/></a>
+                    </div>
+                    <div class="col-6 fs-1">
+                        Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
+                    </div>
+                    <div class="col">
+                        <i class="fa fa-toggle-on"></i>
+                </div>
+            </div>
+        <nav class="navbar navbar-expand-lg bg-primary text-white">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Bini Tutor</a>
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></i></span>
+    </button>
+            </div>
+    <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html">HomePage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="resources.html">Resources</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="my Account.html">MyAccount</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="about.html">About</a>
+              </li>
+          </ul>
+    </div>
         <hr>
+        
     </header>
-    <section class="account-setup"> 
-        <div class = "myAccount account-setup-container grid">
-            <div class="create-account card signup myAccount-form">
+
+
+    <div class="container text-center p-5">
+      <div class="row">
+        <div class="col">
+          <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <div class="card-body">
+              <div class="">
             <h2>Create account</h2>
             <form action="" class="form" id="form">
                 <div class="form-control"><h3>Email</h3>
                     <input id="email" type="email" placeholder="enter your email">
-                    <div></div>
+                    <div class="error .error"></div>
                 </div>
                 <div><h3>Password</h3>
                     <input id="password"  type="password" placeholder="enter your email">
@@ -51,48 +79,85 @@
 
 
         </div>
-        <div class="signin card myAccount-form" >
-            <h3>Sign in</h3>
-            <form action="" class="" id="signin_form">
-                <div class="form-control input_control"><h3>Email</h3>
-                    <input id="signin_email" type="email" placeholder="enter your email" required >
-                    <div class="error"></div>
-                </div>
-                <div><h3>Password</h3>
-                    <input id="signin_password"  type="password" placeholder="enter your password" required >
-                    <div class="error"></div>
-                </div>
-                <input  type="submit" value="signin" class="btn btn-primary my-1">
-                <div></div>
-            </form>
+            </div>
+          </div>
+          
         </div>
-       
+        <div class="col">
+          <div class="card m-5 shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <div class="card-body">
+              <div class="guest   myAccount-form" >
+                <form action="" class="form-control">
+                    <input  type="submit" value="continue as aguest" class="btn btn-primary my-5">
+                </form>
+            </div></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <div class="shadow-lg p-3 mb-5 bg-body rounded" >
+                <h3>Sign in</h3>
+                <form action="" class="shadow-lg p-3 mb-5 bg-body rounded" id="">
+                    <div class="form-control input_control"><h3>Email</h3>
+                        <input id="signin_email" type="email" placeholder="enter your email" required >
+                        <div class="error"></div>
+                    </div>
+                    <div><h3>Password</h3>
+                        <input id="signin_password"  type="password" placeholder="enter your password" required >
+                        <div class="error"></div>
+                    </div>
+                    <input  type="submit" value="signin" class="btn btn-primary my-1">
+                    <div></div>
+                </form>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <hr>
-    </div>
-    
-    <div class="guest   myAccount-form" >
-        <form action="" class="form-control">
-            <input  type="submit" value="continue as aguest" class="btn btn-primary my-5">
-        </form>
-    </div>
-    </section>
        
-    <!-- footer -->
-<footer class="footer bg-lightdark py-1"> 
-        <div class="container grid grid-1"></div>
-        <div class="socialmedia-contact container py-1 ">
-            <a href="https://www.facebook.com/biniyam.seid.50/" class="fab fa-facebook fa-2x ">facebook</a>
-            <a href="https://t.me/z_innovator" class="fab fa-telegram fa-2x">telegram</a>
-            <a href="https://www.instagram.com/seidbiniyam/" class="fab fa-instagram fa-2x">instagram</a>
-            <a href="https://www.tiktok.com/@1_birr" class="fab fa-tiktok fa-2x">tiktok</a>
-        </div>
-</footer>
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+        <!-- Grid container -->
+        <div class="container">
+          
+        
+         
     
-<footer class="footer bg-dark py-1 flex">
-    <div class="copyright">
-        <p><a href="mailto:hege@example.com">copyright @Biniyamseid</a></p>
-    </div>
-  </footer>
-  
+          <hr class="my-5" />
+          <!-- Section: Social -->
+          <section class="text-center ">
+            <a href="https://www.facebook.com/biniyam.seid.50/" class="text-white me-4">
+              <i class="fab fa-facebook-f">facebook</i>
+            </a>
+            <a href="https://t.me/z_innovator" class="text-white me-4">
+              <i class="fab fa-telegram">telegram</i>
+            </a>
+            <a href="https://www.instagram.com/seidbiniyam/" class="text-white me-4">
+              <i class="fab fa-instagram">instagram</i>
+            </a>
+            <a href="https://www.tiktok.com/@1_birr" class="text-white me-4">
+              <i class="fab fa-tiktok">tiktok</i>
+            </a>
+            <a href="https://www.linkedin.com/in/biniyam-seid-285869219/" class="text-white me-4">
+              <i class="fab fa-linkedin">linkedin</i>
+            </a>
+          </section>
+         
+        </div>
+        
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          © 2023 Copyright:
+          <a class="text-white" href="#"
+             >@BiniyamSeid</a
+            >
+        </div>
+        
+      </footer>
+     
+    <script src="bootstrap/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>
